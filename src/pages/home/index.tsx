@@ -4,18 +4,9 @@ import Header from '../../component/header';
 import Input from '../../component/input';
 import Panel from '../../component/panel';
 import HistoryPanel from '../../component/historyPanel';
-import HistoryItem from '../../component/historyItem';
-import { localApi } from '../../services/api';
+
 const Login: React.FC = () => {
-    const [cepResult, setCepResult] = useState([]);
-    const fetchData = async () => {
-        const { data } = await localApi.get('cep');
-        setCepResult(data)
-    }
-    useEffect(() => {
-        fetchData()
-    }, [])
-    console.log(cepResult)
+   
     return (
         <>
             <Header />
@@ -30,11 +21,7 @@ const Login: React.FC = () => {
                     <Panel />
                 </Container>
                 <Container>
-                    <HistoryPanel>
-                        {cepResult.map(({cep, cidade, uf}) => {
-                            return <HistoryItem cep={cep} city={cidade} uf={uf} />
-                        })}
-                    </HistoryPanel>
+                    <HistoryPanel/>
                 </Container>
             </Row>
         </>
