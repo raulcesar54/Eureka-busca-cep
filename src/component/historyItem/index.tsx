@@ -10,9 +10,8 @@ interface HistoryItem {
 
 const HistoryItem: React.FC<HistoryItem> = ({ cep, city, uf }) => {
     const { searchCep, info } = useContext(CepInformationContext);
-    const [firstPart, secondPart] =  info?.cep?.split('-');
-    const verifyEqual = cep === `${firstPart}${secondPart}`
-   
+    const verifyEqual = cep === info.cep
+
     return (
         <HistoryItemContainer isSelected={verifyEqual} onClick={() => !verifyEqual && searchCep(cep)}>
             <div style={{ textAlign: 'center', display: 'flex', flexWrap: 'nowrap', flexDirection: 'row', alignItems: 'center' }}>
