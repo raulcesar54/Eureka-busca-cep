@@ -20,6 +20,7 @@ export const TextContainer = styled.div`
 export const Container = styled.div`
 `
 export const Row = styled.div`
+gap: 49px;
     display: flex;
     flex-direction: row;
 `

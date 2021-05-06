@@ -10,7 +10,7 @@ interface HistoryItem {
 
 const HistoryItem: React.FC<HistoryItem> = ({ cep, city, uf }) => {
     const { searchCep, info } = useContext(CepInformationContext);
-    const [firstPart, secondPart] = info?.cep?.split('-');
+    const [firstPart, secondPart] =  info?.cep?.split('-');
     const verifyEqual = cep === `${firstPart}${secondPart}`
    
     return (

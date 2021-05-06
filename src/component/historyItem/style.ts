@@ -9,6 +9,7 @@ export const HistoryItemContainer = styled.div<HistoryItemContainer>`
     padding: 18px 20px;
     border-radius: 5px;
     display: flex;
+    cursor:pointer;
     align-items: center;
     justify-content: space-between;
     margin: 10px 0px;
