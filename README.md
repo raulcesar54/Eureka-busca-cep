@@ -2,8 +2,6 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/50491912/119208976-bcb9c600-ba7a-11eb-82b6-258e8a811b50.png">
 </p>
-<p align="center">🚀 Eurekacep</p>
-
 <p align="center">
   <img src="https://user-images.githubusercontent.com/50491912/119209023-f094eb80-ba7a-11eb-9f3e-90baac308483.jpg">
 </p>
